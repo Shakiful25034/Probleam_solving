@@ -1,10 +1,10 @@
 /*
 ============================================================================
- Name        : A Divisibility Problem 
+ Name        : Present
  Author      : S. M. shakiful Alam
  language    : C
  created     : 01-June-2026
- modified    : 05-May-2026
+ modified    : 01-june-2026
  link        : https://codeforces.com/problemset/problem/136/A
 ============================================================================
 */  
