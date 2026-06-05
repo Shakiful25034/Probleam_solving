@@ -22,23 +22,23 @@ int main()
 {
     char guest_name[201];
     char residence_host[201];
-    
+    char final_str[201];
+
     scanf("%s", guest_name);
     scanf("%s", residence_host);
-    strcat(guest_name, residence_host);
-    
-    
-    int length_of_final_str = strlen(guest_name);
-    char final_str[201];
     scanf("%s", final_str);
+ 
+    strcat(guest_name, residence_host);
+    int length_of_final_str = strlen(guest_name);
     
+    //যদি স্ত্রিং দুটি সমান না হয় তার মানে No প্রিন্ট করতে হবে
     if (length_of_final_str != strlen(final_str))
     {
         printf("NO");
         return 0;
     }
     
-    //int test[length_of_final_str];
+    // guest_name নামের স্ট্রিং strcat করার পর যে মান থাকে সেটিকে ছোট থেকে বড় সাজানো হলো করা হলো
     char ch;
     for(int i=0; i<length_of_final_str; i++)
     {
@@ -52,7 +52,9 @@ int main()
             }
         }
     }
-    
+
+
+    //final_string কে ছোট থেকে বড় আকারে সাজানো হলো
     for(int i=0; i<length_of_final_str-1; i++)
     {
         for(int j=i+1; j<length_of_final_str; j++)
@@ -65,6 +67,8 @@ int main()
             }
         }
     }
+
+    //যদি দুটি স্ট্রিং সমান হয় তার মানে সাজানো সম্ভব 
     if(strcmp(final_str, guest_name) == 0) //যেহেতু যদি condition true হয় তাহলে zero return করে
     {
         printf("YES");
